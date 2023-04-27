@@ -1,0 +1,17 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Snacks</title>
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+</head>
+<body>
+    {% block content %}
+        <h1>Missing Content</h1>
+    {% endblock content %}
+</body>
+</html>
